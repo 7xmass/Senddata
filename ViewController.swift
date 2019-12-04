@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     @IBAction func Login_Click(_ sender: UIButton) {
 
         let parameters: [String: String] = ["username": txtUserName.text! , "password": txtPassword.text!,"email": txtEmail.text!]
-         let myUrl = URL(string: "http://192.168.61.64/try/login.php")!
+         let myUrl = URL(string: "http://yuor server ip/api")!
 
        var request = URLRequest(url: myUrl)
                request.httpMethod = "POST"// Compose a query string
